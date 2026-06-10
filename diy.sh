@@ -1,5 +1,6 @@
 # 请在下方输入自定义命令(一般用来安装第三方插件)(可以留空)
-
+echo "src-git passwall_packages https://github.com/OpenWrt-Passwall/openwrt-passwall-packages.git;main" >> feeds.conf.default
+echo "src-git passwall_luci https://github.com/OpenWrt-Passwall/openwrt-passwall.git;main" >> feeds.conf.default
 # 编辑默认的lan口ip地址
 sed -i 's/192.168.1.1/192.168.1.2/g' package/base-files/files/bin/config_generate
 
